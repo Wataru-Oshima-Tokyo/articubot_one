@@ -24,11 +24,8 @@
             <visual>
                 <origin xyz="0 0 0.01"/>
                     <geometry>
-                        <cylinder radius="0.05" length="0.1"/>
+                        <cylinder radius="0.05" length="0.08"/>
                     </geometry>
-                <!-- <geometry>
-                    <mesh filename="package://velodyne_description/meshes/VLP16_scan.dae"/>
-                </geometry> -->
             </visual>
         </link>
 
@@ -45,7 +42,7 @@
             <child link="velodyne"/>
         </joint>
 
-        <gazebo reference="velodyne_base_link" >
+        <gazebo reference="velodyne" >
             <sensor name='velodyne-VLP16' type='ray'>
                 <visualize>0</visualize>
                 <update_rate>10</update_rate>

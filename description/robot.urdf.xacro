@@ -17,10 +17,10 @@
         <xacro:include filename="gazebo_control.xacro" />
     </xacro:unless>
     
-    <xacro:velodyne parent_prefix="chassis" frame_prefix="velodyne">
-        <origin xyz="0.122 0 0.122" rpy="0 0 0"/>
+    <xacro:velodyne parent_prefix="base_link" frame_prefix="velodyne">
+        <origin xyz="-0.122 0 0.138" rpy="0 0 0"/>
     </xacro:velodyne>
-    <xacro:imu parent_prefix="chassis" frame_prefix="imu">
+    <xacro:imu parent_prefix="base_link" frame_prefix="imu">
         <origin xyz="0.0 0 0.05" rpy="0 0 0"/>
     </xacro:imu>
     
